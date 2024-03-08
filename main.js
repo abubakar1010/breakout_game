@@ -3,6 +3,7 @@ const container = document.getElementById('container')
 
 const blockHeight = 20;
 const blockWidth = 100;
+const userStart = [230, 10]
 // make blocks class
 
 class Block{
@@ -55,3 +56,14 @@ function addBlock(){
 }
 
 addBlock()
+
+
+const user = document.createElement('div')
+
+        user.classList.add('user')
+
+        user.style.left = userStart[0] + 'px'
+        user.style.bottom =  userStart[1] + 'px'
+
+        // console.log(element.bottomLeft[0]);
+        container.appendChild(user)
